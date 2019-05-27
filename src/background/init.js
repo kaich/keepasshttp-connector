@@ -175,5 +175,11 @@ window.setInterval(function() {
 		browser.runtime.sendMessage({
 			action: 'load_settings'
 		})
+	}).catch(error => {
+		page.settings.hostname = "localhost";
+		browser.storage.local.set({'settings': page.settings});
+		browser.runtime.sendMessage({
+			action: 'load_settings'
+		})
 	})
 }, _request_interval);
