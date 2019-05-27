@@ -98,6 +98,7 @@
 		"https://*/*",
 		"http://*/*",
 		"http://localhost:19455/",
+		"http://localhost:32947/",
 		"http://localhost/",
 		"https://raw.github.com/"
 	]

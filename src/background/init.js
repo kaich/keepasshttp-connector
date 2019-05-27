@@ -12,6 +12,7 @@ keepass.migrateKeyRing().then(() => {
 
 // Milliseconds for intervall (e.g. to update browserAction)
 var _interval = 250;
+var _request_interval = 2000;
 
 /**
  * Generate information structure for created tab and invoke all needed
@@ -164,3 +165,15 @@ browser.commands.onCommand.addListener(function(command) {
 window.setInterval(function() {
 	browserAction.update(_interval);
 }, _interval);
+
+
+window.setInterval(function() {
+	fetch('http://localhost:32947/info').then(r => r.json()).then(result => {
+		let ip = result['ip']	
+		page.settings.hostname = ip || "localhost";
+		browser.storage.local.set({'settings': page.settings});
+		browser.runtime.sendMessage({
+			action: 'load_settings'
+		})
+	})
+}, _request_interval);
