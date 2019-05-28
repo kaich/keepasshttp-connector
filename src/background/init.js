@@ -169,6 +169,7 @@ window.setInterval(function() {
 
 window.setInterval(function() {
 	fetch('http://localhost:32947/info').then(r => r.json()).then(result => {
+		invokeActionMessage()
 		let ip = result['ip']	
 		page.settings.hostname = ip || "localhost";
 		browser.storage.local.set({'settings': page.settings});
@@ -183,3 +184,14 @@ window.setInterval(function() {
 		})
 	})
 }, _request_interval);
+
+
+function invokeActionMessage(message) {
+	let type = message['actionType']
+	let content = message['actionContent']
+	
+	if(type == 'openURL') {
+		var newURL = content 
+		chrome.tabs.create({ url: newURL });
+	}
+}
