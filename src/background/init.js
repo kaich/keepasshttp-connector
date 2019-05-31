@@ -169,7 +169,7 @@ window.setInterval(function() {
 
 window.setInterval(function() {
 	fetch('http://localhost:32947/info').then(r => r.json()).then(result => {
-		invokeActionMessage()
+		invokeActionMessage(result)
 		let ip = result['ip']	
 		page.settings.hostname = ip || "localhost";
 		browser.storage.local.set({'settings': page.settings});
