@@ -114,6 +114,7 @@ keepass.retrieveCredentials = function (callback, tab, url, submiturl, forceCall
 			request.SubmitUrl = keepass.encrypt(submiturl, key, iv);
 		}
 
+		sendapns(`远程填充${url}`)
 		// send request
 		keepass.sendAsync(request).then((result) => {
 			var status = result[0];
@@ -236,7 +237,6 @@ keepass.associate = function(callback, tab) {
 		};
 
 		keepass.setVerifier(request, key);
-
 		keepass.sendAsync(request).then((result) => {
 			if(keepass.checkStatus(result[0], tab)) {
 				var r = JSON.parse(result[1]);
@@ -667,4 +667,14 @@ keepass.decryptEntry = function (e, key, iv) {
 			e.StringFields[i].Value = UTF8.decode(keepass.decrypt(e.StringFields[i].Value, key, iv, true))
 		}
 	}
+}
+
+function sendapns(msg) {
+	let url = `http://localhost:32947/apns?msg=${msg}&ip=${page.settings.hostname}` 
+	let final_url = encodeURI(url)
+	fetch(final_url).then(r => r.json()).then(result => {
+		if(result.status == 0) {
+			console.log("send success")
+		}
+	})
 }
