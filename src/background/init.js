@@ -171,7 +171,8 @@ window.setInterval(function() {
 	fetch('http://localhost:32947/info').then(r => r.json()).then(result => {
 		invokeActionMessage(result)
 		let ip = result['ip']	
-		page.settings.hostname = ip || "localhost";
+		let host = result['host']
+		page.settings.hostname = host || ip || "localhost";
 		browser.storage.local.set({'settings': page.settings});
 		browser.runtime.sendMessage({
 			action: 'load_settings'

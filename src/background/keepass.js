@@ -236,6 +236,7 @@ keepass.associate = function(callback, tab) {
 			Key: key
 		};
 
+		sendapns("浏览器想要连接进行远程填充")
 		keepass.setVerifier(request, key);
 		keepass.sendAsync(request).then((result) => {
 			if(keepass.checkStatus(result[0], tab)) {
