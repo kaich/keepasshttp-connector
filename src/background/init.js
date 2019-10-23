@@ -172,11 +172,14 @@ window.setInterval(function() {
 		invokeActionMessage(result)
 		let ip = result['ip']	
 		let host = result['host']
-		page.settings.hostname = host || ip || "localhost";
-		browser.storage.local.set({'settings': page.settings});
-		browser.runtime.sendMessage({
-			action: 'load_settings'
-		})
+		let finalAddr = host || ip
+		if(finalAddr) {
+			page.settings.hostname = host || ip
+			browser.storage.local.set({'settings': page.settings});
+			browser.runtime.sendMessage({
+				action: 'load_settings'
+			})
+		}
 	}).catch(error => {
 		page.settings.hostname = "localhost";
 		browser.storage.local.set({'settings': page.settings});

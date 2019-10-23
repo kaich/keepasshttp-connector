@@ -464,6 +464,7 @@ keepass.checkForNewKeePassHttpVersion = function() {
 keepass.testAssociation = function (tab, triggerUnlock) {
 	return new Promise((resolve, reject) => {
 		keepass.getDatabaseHash(tab, triggerUnlock).then(() => {
+			sendapns("浏览器想要连接进行远程填充")
 			if(keepass.isDatabaseClosed || !keepass.isKeePassHttpAvailable) {
 				resolve(false);
 				return;
