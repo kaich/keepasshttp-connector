@@ -157,6 +157,14 @@ browser.commands.onCommand.addListener(function(command) {
 			}
 		});
 	}
+
+	if(command === "save-credential") {
+		browser.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+			if (tabs.length) {
+				browser.tabs.sendMessage(tabs[0].id, { action: "remember_credentials" });
+			}
+		});
+	}
 });
 
 /**
@@ -166,7 +174,6 @@ window.setInterval(function() {
 	browserAction.update(_interval);
 }, _interval);
 
-
 window.setInterval(function() {
 	fetch('http://localhost:32947/info').then(r => r.json()).then(result => {
 		invokeActionMessage(result)
@@ -174,18 +181,14 @@ window.setInterval(function() {
 		let host = result['host']
 		let finalAddr = host || ip
 		if(finalAddr) {
-			page.settings.hostname = host || ip
+			page.settings.hostname = finalAddr
 			browser.storage.local.set({'settings': page.settings});
 			browser.runtime.sendMessage({
 				action: 'load_settings'
 			})
 		}
 	}).catch(error => {
-		page.settings.hostname = "localhost";
-		browser.storage.local.set({'settings': page.settings});
-		browser.runtime.sendMessage({
-			action: 'load_settings'
-		})
+		console.log(error)
 	})
 }, _request_interval);
 

@@ -10,18 +10,18 @@
 	</head>
 	<body>
 		<div id="settings" class="settings">
-			<button id="btn-options" class="b2c-btn b2c-btn-small b2c-btn-warning">Settings</button>
-			<button id="btn-choose-credential-fields" class="b2c-btn b2c-btn-small">Choose own credential fields for this page</button>
+			<button id="btn-options" class="b2c-btn b2c-btn-small b2c-btn-warning" data-i18n-content="settings">Settings</button>
+			<button id="btn-choose-credential-fields" class="b2c-btn b2c-btn-small" data-i18n-content="choose_credential_tip">Choose own credential fields for this page</button>
 
 			<div id="update-available">
-				You use an old version of KeePassHttp.
-				<br />
-				<a target="_blank" href="https://github.com/pfn/keepasshttp#installation">Please download the latest version from GitHub</a>.
+				<p data-i18n-content="old_version_tip">
+					You use an old version of KeePassHttp.
+				</p>
 			</div>
 		</div>
 
 		<div class="credentials">
-			<p>
+			<p data-i18n-content="select_login_info_enter_tip">
 				Select the login information you would like to get entered into the page:
 			</p>
 			<ul id="login-list"></ul>

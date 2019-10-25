@@ -1,0 +1,68 @@
+{
+    "settings": {
+      "message": "Settings"
+    },
+    "choose_credential_tip": {
+        "message": "Choose own credential fields for this page"
+    },
+    "register_pair_tip": {
+        "message": "KeePassHttp-Connector has not been configured. Press the connect button to register and pair with KeePassHttp."
+    },
+    "connect": {
+        "message": "Connect"
+    },
+    "disconnected_tip": {
+        "message": "KeePassHttp-Connector has been disconnected from KeePassHttp."
+    },
+    "press_reconnect_tip": {
+        "message": "Press the reconnect button to establish a new connection."
+    },
+    "connect_success_tip": {
+        "message": "KeePassHttp-Connector has been configured using the identifier \"<em id=\"associated-identifier\"></em>\" and is successfully connected to KeePassHttp"
+    },
+    "redected_credential_tip": {
+        "message": "Redetect credential fields"
+    },
+    "encountered_error_tip": {
+        "message": "KeePassHttp-Connector has encountered an error:"
+    },
+    "reload": {
+        "message": "Reload"
+    },
+    "old_version_tip": {
+        "message": "You use an old version of KeePassHttp."
+    },
+    "select_login_info_tip": {
+        "message": "Select the login information you would like to get logged in with:"
+    },
+    "select_login_info_enter_tip": {
+        "message": "Select the login information you would like to get entered into the page:"
+    },
+    "more_password_right_click_tip": {
+        "message": "KeePassHttp-Connector found more than one password field on this page. To enter your logins, right-click on one of the password fields, and choose either the \"<code>Fill User + Pass</code>\" or \"<code>Fill Pass Only</code>\" command."
+    },
+    "entry_changed_save_tip": {
+        "message": "Username or password changed! Save it?"
+    },
+    "new": {
+        "message": "New"
+    },
+    "update": {
+        "message": "Update"
+    },
+    "dismiss": {
+        "message": "Dismiss"
+    },
+    "credentials_will_save_tip": {
+        "message": "Credentials will be saved in connected database with identifier <em></em>."
+    },
+    "username_currently_not_save_tip": {
+        "message": "The used username <strong></strong> is currently not saved!"
+    },
+    "credential_marked_bold_tip": {
+        "message": "The credentials with the used username <strong></strong> are marked bold."
+    },
+    "choose_credential_update_tip": {
+        "message": "Please choose the credentials you want to update:"
+    }
+}

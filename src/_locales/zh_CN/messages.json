@@ -1,0 +1,68 @@
+{
+    "settings": {
+      "message": "设置"
+    },
+    "choose_credential_tip": {
+        "message": "为此页选择自己的凭证字段"
+    },
+    "register_pair_tip": {
+        "message": "连接器尚未配置。按下连接按钮注册并与KeePassHttp配对。"
+    },
+    "connect": {
+        "message": "连接"
+    },
+    "disconnected_tip": {
+        "message": "已从KeePassHttp断开"
+    },
+    "press_reconnect_tip": {
+        "message": "按“重新连接”按钮建立新连接。"
+    },
+    "connect_success_tip": {
+        "message": "已经使用标识符\"<em id=\"关联标识符\"></em>\"进行了配置，并成功连接到KeePassHttp"
+    },
+    "redected_credential_tip": {
+        "message": "重新检测凭证字段"
+    },
+    "encountered_error_tip": {
+        "message": "遇到错误:"
+    },
+    "reload": {
+        "message": "重新载入"
+    },
+    "old_version_tip": {
+        "message": "您使用的是旧版本的KeePassHttp。"
+    },
+    "select_login_info_tip": {
+        "message": "选择你想要登入的登入资料:"
+    },
+    "select_login_info_enter_tip": {
+        "message": "选择你想进入网页的登入资料:"
+    },
+    "more_password_right_click_tip": {
+        "message": "在这个页面上发现了多个密码字段。要输入您的登录，右键单击其中一个密码字段，并选择\"<code>填充用户名和密码</code>\"或\"<code>只填充密码</code>\"命令。"
+    },
+    "entry_changed_save_tip": {
+        "message": "用户名或密码更改!保存它吗?"
+    },
+    "new": {
+        "message": "新建"
+    },
+    "update": {
+        "message": "更新"
+    },
+    "dismiss": {
+        "message": "取消"
+    },
+    "credentials_will_save_tip": {
+        "message": "凭据将根据标识被保存在连接数据库中 <em></em>."
+    },
+    "username_currently_not_save_tip": {
+        "message": "使用的用户名<strong></strong>当前没有保存!"
+    },
+    "credential_marked_bold_tip": {
+        "message": "使用的用户名<strong></strong>的凭据被标记为粗体。"
+    },
+    "choose_credential_update_tip": {
+        "message": "请选择您想要更新的凭据:"
+    }
+}

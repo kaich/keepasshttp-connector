@@ -7,14 +7,17 @@
 		<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="popup_functions.js"></script>
 		<script type="text/javascript" src="popup.js"></script>
+		<script type="text/javascript" src="localize.js"></script>
 	</head>
 	<body>
 		<div id="settings" class="settings">
-			<button id="btn-options" class="b2c-btn b2c-btn-small b2c-btn-warning">Settings</button>
-			<button id="btn-choose-credential-fields" class="b2c-btn b2c-btn-small">Choose own credential fields for this page</button>
+			<button id="btn-options" class="b2c-btn b2c-btn-small b2c-btn-warning" data-i18n-content="settings">Settings</button>
+			<button id="btn-choose-credential-fields" class="b2c-btn b2c-btn-small" data-i18n-content="choose_credential_tip">Choose own credential fields for this page</button>
 
 			<div id="update-available">
-				You use an old version of KeePassHttp.
+				<p data-i18n-content="old_version_tip">
+					You use an old version of KeePassHttp.
+				</p>
 				<br />
 				<a target="_blank" href="https://github.com/pfn/keepasshttp#installation">Please download the latest version from GitHub</a>.
 			</div>
@@ -25,21 +28,21 @@
 		</div>
 
 		<div id="not-configured" style="display: none">
-			<p>
+			<p data-i18n-content="register_pair_tip">
 				KeePassHttp-Connector has not been configured.
 				Press the connect button to register and pair with KeePassHttp.
 			</p>
 			<div style="text-align: right">
-				<button id="connect-button" class="b2c-btn b2c-btn-primary">Connect</button>
+				<button id="connect-button" class="b2c-btn b2c-btn-primary" data-i18n-content="connect">Connect</button>
 			</div>
 		</div>
 
 		<div id="need-reconfigure" style="display: none">
-			<p>
+			<p data-i18n-content="disconnected_tip">
 				KeePassHttp-Connector has been disconnected from KeePassHttp.
 			</p>
 			<code id="need-reconfigure-message"></code>
-			<p>
+			<p data-i18n-content="press_reconnect_tip">
 				Press the reconnect button to establish a new connection.
 			</p>
 			<div style="text-align: right">
@@ -56,25 +59,25 @@
 		</div>
 
 		<div id="configured-and-associated" style="display: none">
-			<p>
+			<p data-i18n-content="connect_success_tip">
 				KeePassHttp-Connector has been configured using the identifier
 				"<em id="associated-identifier"></em>" and is successfully
 				connected to KeePassHttp.
 			</p>
 			<div style="text-align: right">
-				<button id="redetect-fields-button" class="b2c-btn">Redetect credential fields</button>
+				<button id="redetect-fields-button" class="b2c-btn" data-i18n-content="redected_credential_tip">Redetect credential fields</button>
 			</div>
 		</div>
 
 		<div id="error-encountered" style="display: none">
-			<p>
+			<p data-i18n-content="encountered_error_tip">
 				KeePassHttp-Connector has encountered an error:
 			</p>
 			<p style="margin-left: 1em">
 				<code id="error-message"></code>
 			</p>
 			<div style="text-align: right">
-				<button id="reload-status-button" class="b2c-btn">Reload</button>
+				<button id="reload-status-button" class="b2c-btn" data-i18n-content="reload">Reload</button>
 			</div>
 		</div>
 	</body>
