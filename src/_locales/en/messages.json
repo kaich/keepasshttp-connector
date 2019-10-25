@@ -115,5 +115,74 @@
     },
     "auto_fill_single_credential_entry_intro_tip": {
         "message": "If KeePassHttp-Connector does only receive a single entry from KeePassHttp it automatically fills this credentials into the found credential fields."
-    }
+    },
+    "active_autocomplete_username": {
+        "message": "Activate autocomplete for username fields."
+    },
+    "active_autocomplete_username_intro": {
+        "message": "For all username fields on a page a dropdown list appears which contains all available credentials."
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "save": {
+        "message": "Save"
+    },
 }
