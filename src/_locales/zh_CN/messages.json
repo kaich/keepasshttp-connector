@@ -125,6 +125,9 @@
     "check_update_keepasshttp": {
         "message": "检查KeePassHttp的更新:"
     },
+    "every_3_day": {
+        "message": "每3天"
+    },
     "every_week": {
         "message": "每周"
     },
@@ -256,5 +259,8 @@
     },
     "app_inc": {
         "message": "2010-2017 - Perry Nguyen, Lukas Schulze"
+    },
+    "unable_connect_keepasshttp": {
+        "message": "无法连接到 KeePassHttp"
     }
 }

@@ -552,7 +552,7 @@ keepass.getDatabaseHash = function (tab, triggerUnlock) {
 
 			resolve(keepass.databaseHash);
 		}).catch((reason) => {
-			page.tabs[tab.id].errorMessage = "Unable to connect to KeePassHttp";
+			page.tabs[tab.id].errorMessage = browser.i18n.getMessage("unable_connect_keepasshttp");
 			resolve(null);
 		});
 	});
