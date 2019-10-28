@@ -64,5 +64,197 @@
     },
     "choose_credential_update_tip": {
         "message": "请选择您想要更新的凭据:"
+    },
+    "general": {
+        "message": "通用"
+    },
+    "connected_database": {
+        "message": "已连接的数据库"
+    },
+    "speciafield_credential_fields": {
+        "message": "指定凭证字段"
+    },
+    "general_settings": {
+        "message": "通用设置"
+    },
+    "fill_intro_tip": {
+        "message": "如果你只是想把用户名和密码插入到你选择的输入框中，按下 <code>Ctrl + Shift + U</code>. <br /> 如果你只是想把密码插入到你选择的输入框中 <code>Alt + Shift + P</code>. 如果你想要保存输入框中的账号密码，按下<code>Alt + Shift + S</code>, 你可以在 <code>chrome://extensions/configureCommands</code> 页面自定义这些快捷键."
+    },
+    "save": {
+        "message": "保存"
+    },
+    "maxium_icon_blink_when_new_credentials": {
+        "message": "当检测到新的凭证时，图标闪烁的最大时间(ms)是多少 <br /> 默认: 7500"
+    },
+    "redirect_offset": {
+        "message": "重定向偏移:"
+    },
+    "minimum_icon_blink_before_deactivating": {
+        "message": "由于页面重定向停用之前，图标应该闪烁最小时间(ms)。<br /> -1 代表只使用 <i>闪烁时间</i> 忽略重定向许可 <br /> 默认: -1, 推荐: 2000"
+    },
+    "redirect_allowance": {
+        "message": "重定向许可:"
+    },
+    "num_page_cycle_after_redirect": {
+        "message": "在禁用图标之前，在重定向偏移之后，选项卡应该循环多少个页面 <br /> 默认: 1"
+    },
+    "activate_password_generator": {
+        "message": "激活密码生成器."
+    },
+    "generate_icon_in_password_field_tip": {
+        "message": "对于所有密码字段，将添加一个图标来生成新密码。<br />它是由KeePass生成的，带有自动生成新条目密码的配置文件。"
+    },
+    "automatically_retrieve_credentials": {
+        "message": "自动检索凭证."
+    },
+    "retrieve_credentials_when_tab_active_tip": {
+        "message": "激活选项卡后，KeePassHttp-Connector将立即检索凭据."
+    },
+    "auto_fill_single_credential_entry": {
+        "message": "自动填写单个凭证条目."
+    },
+    "auto_fill_single_credential_entry_intro_tip": {
+        "message": "如果仅从KeePassHttp接收单个条目，则它将自动将此凭据填充到找到的凭据字段中."
+    },
+    "active_autocomplete_username": {
+        "message": "激活用户名字段的自动补全."
+    },
+    "active_autocomplete_username_intro": {
+        "message": "对于页面上的所有用户名字段，将出现一个包含所有可用凭据的下拉列表."
+    },
+    "check_update_keepasshttp": {
+        "message": "检查KeePassHttp的更新:"
+    },
+    "every_week": {
+        "message": "每周"
+    },
+    "every_month": {
+        "message": "每月"
+    },
+    "never": {
+        "message": "从不"
+    },
+    "keepasshttpdd_needs_tip": {
+        "message": "需要插件KeePassHttp来检索凭证并将它们发送到KeePass。"
+    },
+    "download_lastest_keepasshttp_tip": {
+        "message": "您可以从这里下载最新的稳定版本: "
+    },
+    "version_keepasshttp": {
+        "message": "KeePassHttp版本:"
+    },
+    "latest_version_available": {
+        "message": "最新版本的KeePassHttp:"
+    },
+    "check_update": {
+        "message": "检查更新"
+    },
+    "autofill_http_auth_and_send": {
+        "message": "自动填充HTTP验证对话框并发送它们."
+    },
+    "autofill_http_auth_and_send_intro": {
+        "message": "如果找到页面的凭据，并且登录类型是HTTP验证请求，则KeePassHttp-Connector尝试使用第一个给定的凭据登录。<br/> 一个HTTP认证对话框是这样的:"
+    },
+    "change_only_if_know": {
+        "message": "<strong>注意!</strong> 只有在您知道您在做什么的情况下，更改以下设置!"
+    },
+    "show_setting_anyway": {
+        "message": "显示这些设置"
+    },
+    "dangerous_settings_intro": {
+        "message": "插件通过 <em>http://[主机名]:[端口号]</em> 和KeePassHTTP交互. <br /> 如果要在远程计算机上运行KeePass，必须更改主机名。 <br /> 有时，默认端口仍然在使用，您必须更改KeePassHTTP中的端口号才能让它运行。因此，必须在KeePassHTTP - connector和KeePassHTTP中设置相同的端口号。"
+    },
+    "host_name": {
+        "message": "主机名:"
+    },
+    "default_localhost": {
+        "message": "默认: localhost"
+    },
+    "port": {
+        "message": "端口号:"
+    },
+    "port_intro_tip": {
+        "message": "如果在默认端口上运行KeePassHTTP有问题，请更改端口。 <br /> 必须在KeePassHTTP选项中设置相同的端口号! <br /> 默认: 19455"
+    },
+    "respect_maxlength": {
+        "message": "遵守输入框的最大长度属性 maxlength=\"\"。"
+    },
+    "respect_maxlength_intro": {
+        "message": "是否将输入的字段限制为maxlength=\"\"所允许的最大字符数?<br /> 这有可能导致问题，造成填充的用户名或者密码截断，无法正常登陆。"
+    },
+    "connected_database_intro": {
+        "message": "如果您使用几个KeePass数据库，您可以为每个数据库定义一个特定的图标颜色。<br />这将帮助您轻松确定从哪个数据库检索凭据。"
+    },
+    "identifier": {
+        "message": "标识"
+    },
+    "icon": {
+        "message": "图标"
+    },
+    "last_used": {
+        "message": "最后使用"
+    },
+    "delete": {
+        "message": "删除"
+    },
+    "no_connected_databases_found": {
+        "message": "没有发现已连接的数据库。"
+    },
+    "remove": {
+        "message": "移除"
+    },
+    "remove_identifier_from_browser_title": {
+        "message": "从浏览器移除此标识?"
+    },
+    "is_really_remove_identifier": {
+        "message": "是否要从浏览器移除此标识 <span class=\"bold\"></span> ?"
+    },
+    "reconnect_any_time": {
+        "message": "你可以在任何时候重新连接此数据库。"
+    },
+    "cancel": {
+        "message": "取消"
+    },
+    "remove_now": {
+        "message": "是, 现在移除"
+    },
+    "specified_credential_fields": {
+        "message": "指定凭证字段"
+    },
+    "specified_credential_fields_intro": {
+        "message": "如果检测到错误的凭据字段，则可以自己指定正确的字段。 <br /> 只需转到页面并单击图标，现在选择<em>为这个页面选择自己的凭据字段</em>, <br /> 在这个页面上，您可以管理指定的凭据字段。"
+    },
+    "page_url": {
+        "message": "页面地址"
+    },
+    "no_specified_credential": {
+        "message": "没有找到指定的凭据字段。"
+    },
+    "is_remove_specified_credential_field": {
+        "message": "删除指定的凭据字段?"
+    },
+    "is_really_remove_specified_credential_field": {
+        "message": "您真的要删除页面上指定的凭据字段吗 <strong></strong>?"
+    },
+    "is_really_remove_specified_credential_field_tip": {
+        "message": "当您下次访问此页面时，将自动检测凭据字段。"
+    },
+    "developer_intro": {
+        "message": "开发者： <a target=\"_blank\" href=\"https://github.com/pfn/\">Perry Nguyen</a> and <a target=\"_blank\" href=\"http://lukas-schulze.de\">Lukas Schulze</a>.<br /> 兼容Firefox开发者： <a target=\"_blank\" href=\"https://github.com/projectgus\">Angus Gratton</a> and <a target=\"_blank\" href=\"https://github.com/smorks\">Andy Brandt</a>."
+    },
+    "visit_chrome_store": {
+        "message": "访问扩展的网页在Chrome网上商店"
+    },
+    "visit_project_page_github": {
+        "message": "访问GitHub的项目页面"
+    },
+    "extension_version": {
+        "message": "插件版本:"
+    },
+    "keepasshttp_version": {
+        "message": "KeePassHttp 版本:"
+    },
+    "app_inc": {
+        "message": "2010-2017 - Perry Nguyen, Lukas Schulze"
     }
 }

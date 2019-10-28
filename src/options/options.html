@@ -175,34 +175,34 @@
 				</p>
 				<hr />
 				<p>
-					Check for updates of KeePassHttp:
+					<span data-i18n-content="check_update_keepasshttp">Check for updates of KeePassHttp:</span> 
 					<br />
-					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="3" /> every 3 days</label>
-					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="7" /> every week</label>
-					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="30" /> every month</label>
-					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="0" /> never</label>
+					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="3" /> <span data-i18n-content="every_3_day">every 3 days</span></label>
+					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="7" /> <span data-i18n-content="every_week"> every week</span></label>
+					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="30" /> <span data-i18n-content="every_month">every month</span></label>
+					<label class="radio inline"><input type="radio" name="checkUpdateKeePassHttp" value="0" /> <span data-i18n-content="never">never</span></label>
 				</p>
 				<div class="help-block kphVersion">
-					KeePassHttp-Connector needs the plugin KeePassHttp to retrieve credentials from and send them to KeePass.
+					<span data-i18n-content="keepasshttp_needs_tip"> KeePassHttp-Connector needs the plugin KeePassHttp to retrieve credentials from and send them to KeePass.</span>
 					<br />
-					You can download the latest stable version from here: <a target="_blank" href="https://github.com/pfn/keepasshttp">https://github.com/pfn/keepasshttp</a>
+					<span data-i18n-content="download_lastest_keepasshttp_tip">You can download the latest stable version from here: </span>  <a target="_blank" href="https://github.com/pfn/keepasshttp">https://github.com/pfn/keepasshttp</a>
 					<br />
 					<br />
 					<div class="row">
-						<div class="span3">Your version of KeePassHttp:</div>
+						<div class="span3" data-i18n-content="version_keepasshttp">Your version of KeePassHttp:</div>
 						<div class="span6"><em class="yourVersion"></em></div>
 					</div>
 					<div class="row">
-						<div class="span3">Latest available version of KeePassHttp:</div>
-						<div class="span6"><em class="latestVersion"></em><button class="btn btn-mini checkUpdateKeePassHttp">Check for updates</button></div>
+						<div class="span3" data-i18n-content="latest_version_available">Latest available version of KeePassHttp:</div>
+						<div class="span6"><em class="latestVersion"></em><button class="btn btn-mini checkUpdateKeePassHttp" data-i18n-content="check_update">Check for updates</button></div>
 					</div>
 				</div>
 				<hr />
 				<p id="http-auth-options">
 					<label class="checkbox">
-						<input type="checkbox" name="autoFillAndSend"/> Auto fill HTTP Auth dialogs and send them.
+						<input type="checkbox" name="autoFillAndSend"/> <span data-i18n-content="autofill_http_auth_and_send"> Auto fill HTTP Auth dialogs and send them.</span>
 					</label>
-					<span class="help-block">
+					<span class="help-block" data-i18n-content="autofill_http_auth_and_send_intro">
 						If credentials are found for a page and the login-type is an HTTP Auth request, KeePassHttp-Connector tries to login with the first given credentials.
 						<br />
 						An HTTP Auth dialog looks like this:
@@ -210,13 +210,13 @@
 					<img src="/options/http-auth-dialog.png" alt="http-auth-dialog" />
 				</p>
 				<hr />
-				<div class="alert alert-error">
+				<div class="alert alert-error" data-i18n-content="change_only_if_know">
 					<strong>Attention!</strong> Please change the following settings only if you know what you are doing!
 				</div>
-				<button id="showDangerousSettings" class="btn btn-danger" style="width: 203px; height: 30px;" >Show these settings anyway</button>
+				<button id="showDangerousSettings" class="btn btn-danger" style="width: 203px; height: 30px;" data-i18n-content="show_setting_anyway">Show these settings anyway</button>
 				<div id="dangerousSettings">
 				<br />
-					<p>
+					<p data-i18n-content="dangerous_settings_intro">
 						KeePassHttp-Connector communicates on <em>http://[hostname]:[port]</em> with KeePassHTTP.
 						<br />
 						If you want to run KeePass on a remote computer, you have to change the hostname.
@@ -224,25 +224,25 @@
 						Sometimes the default port is still in use and you have to change the port number in KeePassHTTP to get it running. So you have to set the same port number in KeePassHttp-Connector and KeePassHTTP.
 					</p>
 					<p>
-						<label for="hostname">Hostname:</label>
+						<label for="hostname" data-i18n-content="host_name">Hostname:</label>
 						<div class="control-group">
 							<div class="input-append">
 								<input type="text" id="hostname" placeholder="localhost" value="localhost" />
-								<button class="btn" id="hostnameButton" type="button">Save</button>
+								<button class="btn" id="hostnameButton" type="button" data-i18n-content="save">Save</button>
 							</div>
-							<span class="help-inline">
+							<span class="help-inline" data-i18n-content="">
 								Default: localhost
 							</span>
 						</div>
 					</p>
 					<p>
-						<label for="port">Port:</label>
+						<label for="port" data-i18n-content="port">Port:</label>
 						<div class="control-group">
 							<div class="input-append">
 								<input type="number" id="port" placeholder="19455" value="19455" />
-								<button class="btn" id="portButton" type="button">Save</button>
+								<button class="btn" id="portButton" type="button" data-i18n-content="save">Save</button>
 							</div>
-							<span class="help-inline">
+							<span class="help-inline" data-i18n-content="port_intro_tip">
 								Change the port if you have trouble with running KeePassHTTP on the default port.
 								<br />
 								You have to set the same port number in KeePassHTTP options!
@@ -259,9 +259,9 @@
 					</p>
 					<p>
 						<label class="checkbox">
-							<input type="checkbox" name="respectMaxLength"/> Respect maxlength="" attribute on inputs.
+							<input type="checkbox" name="respectMaxLength"/> <span data-i18n-content="respect_maxlength">Respect maxlength="" attribute on inputs.</span> 
 						</label>
-						<span class="help-block">Limit the field filled in to the maximum number of characters allowed by
+						<span class="help-block" data-i18n-content="respect_maxlength_intro">Limit the field filled in to the maximum number of characters allowed by
 							maxlength="" in the input as set by the website admin?<br />
 							There is a possibility of this causing issues with sites that have decreased this value after
 							you have already created one, or have increased it before the fact and the password stored in keepass itself is longer than maxlength.
@@ -272,9 +272,9 @@
 
 			<!-- Connected Databases -->
 			<div class="tab" id="tab-connected-databases">
-				<h2>Connected Databases</h2>
+				<h2 data-i18n-content="connected_database">Connected Databases</h2>
 				<hr />
-				<p>
+				<p data-i18n-content="connected_database_intro">
 					If you are using several KeePass databases you can define a specific icon-color to each of them.
 					<br />
 					This will help you to easily determine from which database the credentials are retrieved.
@@ -282,16 +282,16 @@
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
 						<tr>
-							<th class="span5">Identifier</th>
-							<th class="span2">Icon</th>
-							<th class="span2">Last used</th>
-							<th class="span2">Created</th>
-							<th class="span1">Delete</th>
+							<th class="span5" data-i18n-content="identifier">Identifier</th>
+							<th class="span2" data-i18n-content="icon">Icon</th>
+							<th class="span2" data-i18n-content="last_used">Last used</th>
+							<th class="span2" data-i18n-content="create">Created</th>
+							<th class="span1" data-i18n-content="delete">Delete</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="empty">
-							<td colspan="5">No connected databases found.</td>
+							<td colspan="5" data-i18n-content="no_connected_databases_found">No connected databases found.</td>
 						</tr>
 						<tr class="clone">
 							<td></td>
@@ -325,27 +325,27 @@
 							</td>
 							<td class="last-used"></td>
 							<td class="created"></td>
-							<td><button class="btn delete btn-danger">Remove</button></td>
+							<td><button class="btn delete btn-danger" data-i18n-content="remove">Remove</button></td>
 						</tr>
 					</tbody>
 				</table>
 				<div style="text-align: right">
-					<button id="connect-button" class="b2c-btn b2c-btn-primary">Connect</button>
+					<button id="connect-button" class="b2c-btn b2c-btn-primary" data-i18n-content="connect">Connect</button>
 					</div>
 				<div id="dialogDeleteConnectedDatabase" class="modal" style="display:none;" tabindex="-1" role="dialog">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-								<h3 id="myModalLabel">Remove identifier from browser?</h3>
+								<h3 id="myModalLabel" data-i18n-content="remove_identifier_from_browser_title">Remove identifier from browser?</h3>
 							</div>
 							<div class="modal-body">
-								<p>Do you really want to remove the identifier <span class="bold"></span> from browser?</p>
-								<p class="help-block">You can reconnect your database at any time.</p>
+								<p data-i18n-content="is_really_remove_identifier">Do you really want to remove the identifier <span class="bold"></span> from browser?</p>
+								<p class="help-block" data-i18n-content="reconnect_any_time">You can reconnect your database at any time.</p>
 							</div>
 							<div class="modal-footer">
-								<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-								<button class="btn yes btn-primary">Yes, remove now</button>
+								<button class="btn" data-dismiss="modal" aria-hidden="true" data-i18n-content="cancel">Cancel</button>
+								<button class="btn yes btn-primary" data-i18n-content="remove_now">Yes, remove now</button>
 							</div>
 						</div>
 					</div>
@@ -354,9 +354,9 @@
 
 			<!-- Specified credential fields -->
 			<div class="tab" id="tab-specified-fields">
-				<h2>Specified credential fields</h2>
+				<h2 data-i18n-content="specified_credential_fields">Specified credential fields</h2>
 				<hr />
-				<p>
+				<p data-i18n-content="specified_credential_fields_intro">
 					If KeePassHttp-Connector detects the wrong credential fields, you are able to specify the correct fields by yourself.
 					<br />
 					Just go to the page and click on the KeePassHttp-Connector-Icon, now select <em>Choose own credential fields for this page</em>.
@@ -366,17 +366,17 @@
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
 						<tr>
-							<th class="span10">Page URL</th>
-							<th class="span2">Delete</th>
+							<th class="span10" data-i18n-content="page_url">Page URL</th>
+							<th class="span2" data-i18n-content="delete">Delete</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="empty">
-							<td colspan="2">No specified credential fields found.</td>
+							<td colspan="2" data-i18n-content="no_specified_credential">No specified credential fields found.</td>
 						</tr>
 						<tr class="clone">
 							<td></td>
-							<td><button class="btn delete btn-danger btn">Remove</button></td>
+							<td><button class="btn delete btn-danger btn" data-i18n-content="remove">Remove</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -385,15 +385,15 @@
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-								<h3 id="myModalLabel">Remove specified credential fields?</h3>
+								<h3 id="myModalLabel" data-i18n-content="is_remove_specified_credential_field">Remove specified credential fields?</h3>
 							</div>
 							<div class="modal-body">
-								<p>Do you really want to remove the specified credential fields on the page <strong></strong>?</p>
-								<p class="help-block">KeePassHttp-Connector will automatically detect the credential fields the next time you visit this page.</p>
+								<p data-i18n-content="is_really_remove_specified_credential_field">Do you really want to remove the specified credential fields on the page <strong></strong>?</p>
+								<p class="help-block" data-i18n-content="is_really_remove_specified_credential_field_tip">KeePassHttp-Connector will automatically detect the credential fields the next time you visit this page.</p>
 							</div>
 							<div class="modal-footer">
-								<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-								<button class="btn yes btn-primary">Yes, remove now</button>
+								<button class="btn" data-dismiss="modal" aria-hidden="true" data-i18n-content="cancel">Cancel</button>
+								<button class="btn yes btn-primary" data-i18n-content="remove_now">Yes, remove now</button>
 							</div>
 						</div>
 					</div>
@@ -402,31 +402,31 @@
 
 			<!-- About -->
 			<div class="tab" id="tab-about">
-				<h2>About</h2>
+				<h2 data-i18n-content="about">About</h2>
 				<hr />
-				<p>
+				<p data-i18n-content="developer_intro">
 					Developed by <a target="_blank" href="https://github.com/pfn/">Perry Nguyen</a> and <a target="_blank" href="http://lukas-schulze.de">Lukas Schulze</a>.<br />
 					WebExtension (Firefox) compatibility by <a target="_blank" href="https://github.com/projectgus">Angus Gratton</a> and <a target="_blank" href="https://github.com/smorks">Andy Brandt</a>.
 				</p>
 				<p>
-					<a target="_blank" href="https://chrome.google.com/webstore/detail/keepasshttp-connector/dafgdjggglmmknipkhngniifhplpcldb" id="chrome-web-store-link">Visit extension's page in Chrome Web store</a>
+					<a target="_blank" href="https://chrome.google.com/webstore/detail/keepasshttp-connector/dafgdjggglmmknipkhngniifhplpcldb" id="chrome-web-store-link" data-i18n-content="visit_chrome_store">Visit extension's page in Chrome Web store</a>
 				</p>
 				<p>
-					<a target="_blank" href="https://github.com/smorks/keepasshttp-connector">Visit project's page in GitHub</a>.
+					<a target="_blank" href="https://github.com/smorks/keepasshttp-connector" data-i18n-content="visit_project_page_github">Visit project's page in GitHub</a>.
 				</p>
 				<hr />
 				<div class="row">
-					<div class="span3">KeePassHttp-Connector Version:</div>
+					<div class="span3" data-i18n-content="extension_version">KeePassHttp-Connector Version:</div>
 					<div class="span6"><em class="versionCIP"></em></div>
 				</div>
 				<div class="row">
-					<div class="span3">KeePassHttp Version:</div>
+					<div class="span3" data-i18n-content="keepasshttp_version">KeePassHttp Version:</div>
 					<div class="span6"><em class="versionKPH"></em></div>
 				</div>
 			</div>
 			<hr>
 			<div class="footer">
-				<p>2010-2017 - Perry Nguyen, Lukas Schulze</p>
+				<p data-i18n-content="app_inc">2010-2017 - Perry Nguyen, Lukas Schulze</p>
 			</div>
 		</div> <!-- /container -->
 	</body>

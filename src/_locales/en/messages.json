@@ -122,67 +122,139 @@
     "active_autocomplete_username_intro": {
         "message": "For all username fields on a page a dropdown list appears which contains all available credentials."
     },
-    "save": {
-        "message": "Save"
+    "check_update_keepasshttp": {
+        "message": "Check for updates of KeePassHttp:"
     },
-    "save": {
-        "message": "Save"
+    "every_week": {
+        "message": "every week"
     },
-    "save": {
-        "message": "Save"
+    "every_month": {
+        "message": "every month"
     },
-    "save": {
-        "message": "Save"
+    "never": {
+        "message": "never"
     },
-    "save": {
-        "message": "Save"
+    "keepasshttpdd_needs_tip": {
+        "message": "KeePassHttp-Connector needs the plugin KeePassHttp to retrieve credentials from and send them to KeePass."
     },
-    "save": {
-        "message": "Save"
+    "download_lastest_keepasshttp_tip": {
+        "message": "You can download the latest stable version from here: "
     },
-    "save": {
-        "message": "Save"
+    "version_keepasshttp": {
+        "message": "Your version of KeePassHttp:"
     },
-    "save": {
-        "message": "Save"
+    "latest_version_available": {
+        "message": "Latest available version of KeePassHttp:"
     },
-    "save": {
-        "message": "Save"
+    "check_update": {
+        "message": "Check for updates"
     },
-    "save": {
-        "message": "Save"
+    "autofill_http_auth_and_send": {
+        "message": "Auto fill HTTP Auth dialogs and send them."
     },
-    "save": {
-        "message": "Save"
+    "autofill_http_auth_and_send_intro": {
+        "message": "If credentials are found for a page and the login-type is an HTTP Auth request, KeePassHttp-Connector tries to login with the first given credentials. <br /> An HTTP Auth dialog looks like this:"
     },
-    "save": {
-        "message": "Save"
+    "change_only_if_know": {
+        "message": "<strong>Attention!</strong> Please change the following settings only if you know what you are doing!"
     },
-    "save": {
-        "message": "Save"
+    "show_setting_anyway": {
+        "message": "Show these settings anyway"
     },
-    "save": {
-        "message": "Save"
+    "dangerous_settings_intro": {
+        "message": "KeePassHttp-Connector communicates on <em>http://[hostname]:[port]</em> with KeePassHTTP. <br /> If you want to run KeePass on a remote computer, you have to change the hostname. <br /> Sometimes the default port is still in use and you have to change the port number in KeePassHTTP to get it running. So you have to set the same port number in KeePassHttp-Connector and KeePassHTTP."
     },
-    "save": {
-        "message": "Save"
+    "host_name": {
+        "message": "Hostname:"
     },
-    "save": {
-        "message": "Save"
+    "default_localhost": {
+        "message": "Default: localhost"
     },
-    "save": {
-        "message": "Save"
+    "port": {
+        "message": "Port:"
     },
-    "save": {
-        "message": "Save"
+    "port_intro_tip": {
+        "message": "Change the port if you have trouble with running KeePassHTTP on the default port. <br /> You have to set the same port number in KeePassHTTP options! <br /> Default: 19455"
     },
-    "save": {
-        "message": "Save"
+    "respect_maxlength": {
+        "message": "Respect maxlength=\"\" attribute on inputs."
     },
-    "save": {
-        "message": "Save"
+    "respect_maxlength_intro": {
+        "message": "Limit the field filled in to the maximum number of characters allowed by maxlength=\"\" in the input as set by the website admin?<br /> There is a possibility of this causing issues with sites that have decreased this value after you have already created one, or have increased it before the fact and the password stored in keepass itself is longer than maxlength."
     },
-    "save": {
-        "message": "Save"
+    "connected_database_intro": {
+        "message": "If you are using several KeePass databases you can define a specific icon-color to each of them. <br /> This will help you to easily determine from which database the credentials are retrieved."
     },
+    "identifier": {
+        "message": "Identifier"
+    },
+    "icon": {
+        "message": "Icon"
+    },
+    "last_used": {
+        "message": "Last used"
+    },
+    "delete": {
+        "message": "Delete"
+    },
+    "no_connected_databases_found": {
+        "message": "No connected databases found."
+    },
+    "remove": {
+        "message": "Remove"
+    },
+    "remove_identifier_from_browser_title": {
+        "message": "Remove identifier from browser?"
+    },
+    "is_really_remove_identifier": {
+        "message": "Do you really want to remove the identifier <span class=\"bold\"></span> from browser?"
+    },
+    "reconnect_any_time": {
+        "message": "You can reconnect your database at any time."
+    },
+    "cancel": {
+        "message": "Cancel"
+    },
+    "remove_now": {
+        "message": "Yes, remove now"
+    },
+    "specified_credential_fields": {
+        "message": "Specified credential fields"
+    },
+    "specified_credential_fields_intro": {
+        "message": "If KeePassHttp-Connector detects the wrong credential fields, you are able to specify the correct fields by yourself. <br /> Just go to the page and click on the KeePassHttp-Connector-Icon, now select <em>Choose own credential fields for this page</em>. <br /> On this page you can manage theses specified credential fields."
+    },
+    "page_url": {
+        "message": "Page URL"
+    },
+    "no_specified_credential": {
+        "message": "No specified credential fields found."
+    },
+    "is_remove_specified_credential_field": {
+        "message": "Remove specified credential fields?"
+    },
+    "is_really_remove_specified_credential_field": {
+        "message": "Do you really want to remove the specified credential fields on the page <strong></strong>?"
+    },
+    "is_really_remove_specified_credential_field_tip": {
+        "message": "KeePassHttp-Connector will automatically detect the credential fields the next time you visit this page."
+    },
+    "developer_intro": {
+        "message": "Developed by <a target=\"_blank\" href=\"https://github.com/pfn/\">Perry Nguyen</a> and <a target=\"_blank\" href=\"http://lukas-schulze.de\">Lukas Schulze</a>.<br /> WebExtension (Firefox) compatibility by <a target=\"_blank\" href=\"https://github.com/projectgus\">Angus Gratton</a> and <a target=\"_blank\" href=\"https://github.com/smorks\">Andy Brandt</a>."
+    },
+    "visit_chrome_store": {
+        "message": "Visit extension's page in Chrome Web store"
+    },
+    "visit_project_page_github": {
+        "message": "Visit project's page in GitHub"
+    },
+    "extension_version": {
+        "message": "KeePassHttp-Connector Version:"
+    },
+    "keepasshttp_version": {
+        "message": "KeePassHttp Version:"
+    },
+    "app_inc": {
+        "message": "2010-2017 - Perry Nguyen, Lukas Schulze"
+    }
 }
