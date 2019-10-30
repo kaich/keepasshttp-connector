@@ -227,9 +227,10 @@ cipPassword.createDialog = function() {
 	var $dialog = cIPJQ("<div>")
 		.attr("id", "cip-genpw-dialog");
 
+    var generateStr = browser.i18n.getMessage("generate")
 	var $divFloat = cIPJQ("<div>").addClass("cip-genpw-clearfix");
 	var $btnGenerate = cIPJQ("<button>")
-		.text("Generate")
+		.text(generateStr)
 		.attr("id", "cip-genpw-btn-generate")
 		.addClass("b2c-btn")
 		.addClass("b2c-btn-primary")
@@ -243,8 +244,9 @@ cipPassword.createDialog = function() {
 		});
 	$divFloat.append($btnGenerate);
 
+    var copyClipboardStr = browser.i18n.getMessage("copy_to_clipboard")
 	var $btnClipboard = cIPJQ("<button>")
-		.text("Copy to clipboard")
+		.text(copyClipboardStr)
 		.attr("id", "cip-genpw-btn-clipboard")
 		.addClass("b2c-btn")
 		.addClass("b2c-btn-small")
@@ -272,6 +274,7 @@ cipPassword.createDialog = function() {
 	$frameInputAppend.append($textfieldPassword).append($quality);
 	$dialog.append($frameInputAppend);
 
+	var fillNextFieldStr = browser.i18n.getMessage("fill_next_password_field_tip")
 	var $checkboxNextField = cIPJQ("<input>")
 		.attr("id", "cip-genpw-checkbox-next-field")
 		.attr("type", "checkbox")
@@ -279,11 +282,12 @@ cipPassword.createDialog = function() {
 	var $labelNextField = cIPJQ("<label>")
 		.append($checkboxNextField)
 		.addClass("cip-genpw-label")
-		.append(" also fill in the next password-field");
+		.append(fillNextFieldStr);
 	$dialog.append($labelNextField);
 
+    var fillButtonTitle = browser.i18n.getMessage("fill_in_copy")
 	var $btnFillIn = cIPJQ("<button>")
-		.text("Fill in & copy to clipboard")
+		.text(fillButtonTitle)
 		.attr("id", "cip-genpw-btn-fillin")
 		.addClass("b2c-btn")
 		.addClass("b2c-btn-small")
@@ -1127,7 +1131,7 @@ cipFields.useDefinedCredentialFields = function() {
 
 var cip = {};
 
-// settings of KeePassHttp-Connector
+// settings of FantasyKee
 cip.settings = {};
 // username field which will be set on focus
 cip.u = null;
@@ -1600,7 +1604,7 @@ cip.fillIn = function(combination, onlyPassword, suppressWarnings) {
 			if(countPasswords > 1) {
 				if(!suppressWarnings) {
 					var message = "Error #105\nMore than one login was found in KeePass!\n" +
-					"Press the KeePassHttp-Connector icon for more options.";
+					"Press the FantasyKee icon for more options.";
 					browser.runtime.sendMessage({
 						action: 'alert',
 						args: [message]
@@ -1620,7 +1624,7 @@ cip.fillIn = function(combination, onlyPassword, suppressWarnings) {
 		else {
 			if(!suppressWarnings) {
 					var message = "Error #104\nMore than one login was found in KeePass!\n" +
-					"Press the KeePassHttp-Connector icon for more options.";
+					"Press the FantasyKee icon for more options.";
 				browser.runtime.sendMessage({
 					action: 'alert',
 					args: [message]

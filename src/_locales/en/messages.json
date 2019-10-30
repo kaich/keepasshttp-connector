@@ -243,7 +243,7 @@
         "message": "KeePassHttp-Connector will automatically detect the credential fields the next time you visit this page."
     },
     "developer_intro": {
-        "message": "Developed by <a target=\"_blank\" href=\"https://github.com/pfn/\">Perry Nguyen</a> and <a target=\"_blank\" href=\"http://lukas-schulze.de\">Lukas Schulze</a>.<br /> WebExtension (Firefox) compatibility by <a target=\"_blank\" href=\"https://github.com/projectgus\">Angus Gratton</a> and <a target=\"_blank\" href=\"https://github.com/smorks\">Andy Brandt</a>."
+        "message": "Developed by <a target=\"_blank\" href=\"https://github.com/kaich\">kai</a>."
     },
     "visit_chrome_store": {
         "message": "Visit extension's page in Chrome Web store"
@@ -258,9 +258,27 @@
         "message": "KeePassHttp Version:"
     },
     "app_inc": {
-        "message": "2010-2017 - Perry Nguyen, Lukas Schulze"
+        "message": "2019 - kai"
     },
     "unable_connect_keepasshttp": {
         "message": "Unable to connect to KeePassHttp"
+    },
+    "fill_in_copy": {
+        "message": "Fill in & copy to clipboard"
+    },
+    "generate": {
+        "message": "Generate"
+    },
+    "copy_to_clipboard": {
+        "message": "Copy to clipboard"
+    },
+    "fill_next_password_field_tip": {
+        "message": " also fill in the next password-field"
+    },
+    "supress_warnings_errors": {
+        "message": " 禁止弹窗来显示错误和警告。"
+    }, 
+    "disable_error_warnings_tip": {
+        "message": " 禁用通过JavaScript弹窗传递错误和警告。"
     }
 }

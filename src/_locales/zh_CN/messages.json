@@ -108,7 +108,7 @@
         "message": "自动检索凭证."
     },
     "retrieve_credentials_when_tab_active_tip": {
-        "message": "激活选项卡后，KeePassHttp-Connector将立即检索凭据."
+        "message": "激活选项卡后，FantasyKee将立即检索凭据."
     },
     "auto_fill_single_credential_entry": {
         "message": "自动填写单个凭证条目."
@@ -156,7 +156,7 @@
         "message": "自动填充HTTP验证对话框并发送它们."
     },
     "autofill_http_auth_and_send_intro": {
-        "message": "如果找到页面的凭据，并且登录类型是HTTP验证请求，则KeePassHttp-Connector尝试使用第一个给定的凭据登录。<br/> 一个HTTP认证对话框是这样的:"
+        "message": "如果找到页面的凭据，并且登录类型是HTTP验证请求，则FantasyKee尝试使用第一个给定的凭据登录。<br/> 一个HTTP认证对话框是这样的:"
     },
     "change_only_if_know": {
         "message": "<strong>注意!</strong> 只有在您知道您在做什么的情况下，更改以下设置!"
@@ -243,7 +243,7 @@
         "message": "当您下次访问此页面时，将自动检测凭据字段。"
     },
     "developer_intro": {
-        "message": "开发者： <a target=\"_blank\" href=\"https://github.com/pfn/\">Perry Nguyen</a> and <a target=\"_blank\" href=\"http://lukas-schulze.de\">Lukas Schulze</a>.<br /> 兼容Firefox开发者： <a target=\"_blank\" href=\"https://github.com/projectgus\">Angus Gratton</a> and <a target=\"_blank\" href=\"https://github.com/smorks\">Andy Brandt</a>."
+        "message": "开发者：<a target=\"_blank\" href=\"https://github.com/kaich\">kai</a>（基于原本修改，不再链接曾经的开发者)"
     },
     "visit_chrome_store": {
         "message": "访问扩展的网页在Chrome网上商店"
@@ -258,9 +258,27 @@
         "message": "KeePassHttp 版本:"
     },
     "app_inc": {
-        "message": "2010-2017 - Perry Nguyen, Lukas Schulze"
+        "message": "2019 - kai"
     },
     "unable_connect_keepasshttp": {
         "message": "无法连接到 KeePassHttp"
+    },
+    "fill_in_copy": {
+        "message": "填充 & 复制到剪切板"
+    },
+    "generate": {
+        "message": "生成"
+    },
+    "copy_to_clipboard": {
+        "message": "复制到剪切板"
+    },
+    "fill_next_password_field_tip": {
+        "message": " 同时填充下一个密码框"
+    },
+    "supress_warnings_errors": {
+        "message": " also fill in the next password-field"
+    }, 
+    "disable_error_warnings_tip": {
+        "message": " Disables communicating errors and warnings via JavaScript alert."
     }
 }

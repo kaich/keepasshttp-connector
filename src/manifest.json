@@ -1,9 +1,9 @@
 {
-	"name": "KeePassHttp-Connector",
-	"version": "1.0.11",
+	"name": "FantasyKeep",
+	"version": "1.0.0",
 	"manifest_version": 2,
 	"default_locale": "en",
-	"description": "KeePass integration for browsers using KeePassHttp",
+	"description": "FantasyPass integration for browsers using KeePassHttp",
 	"icons": {
 		"16": "icons/keepass_16x16.png",
 		"48": "icons/keepass_48x48.png",
@@ -11,7 +11,7 @@
 	},
 	"applications": {
 		"gecko": {
-			"id": "keepasshttp-connector@addons.brandt.tech"
+			"id": "FantasyKee@addons.brandt.tech"
 		}
 	},
 	"browser_action": {
@@ -19,7 +19,7 @@
 			"19": "icons/19x19/icon_normal_blue_19x19.png",
 			"38": "icons/keepass_38x38.png"
 		},
-		"default_title": "KeePassHttp-Connector",
+		"default_title": "FantasyKee",
 		"default_popup": "popups/popup.html"
 	},
 	"options_ui": {

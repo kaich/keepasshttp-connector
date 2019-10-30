@@ -1,4 +1,4 @@
-# KeePassHttp-Connector
+# FantasyKee
 
 is an extension to integrate [KeePass](http://keepass.info)/[KeePassXC](https://keepassxc.org/) as a password manager with Mozilla Firefox and Google Chrome browsers.
 
