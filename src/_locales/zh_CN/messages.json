@@ -258,7 +258,7 @@
         "message": "KeePassHttp 版本:"
     },
     "app_inc": {
-        "message": "2019 - kai"
+        "message": "FantasyPass@inc 2019 - kai"
     },
     "unable_connect_keepasshttp": {
         "message": "无法连接到 KeePassHttp"
@@ -280,5 +280,23 @@
     }, 
     "disable_error_warnings_tip": {
         "message": " 禁用通过JavaScript弹窗传递错误和警告。"
+    },
+    "insert_username_password": {
+        "message": "插入账号和密码"
+    },
+    "insert_password": {
+        "message": "插入密码"
+    },
+    "save_credentials": {
+        "message": "保存登录凭证"
+    },
+    "show_password_generator_icons": {
+        "message": "显示密码生成器图标"
+    },
+    "username_tip": {
+        "message": "用户名: <span class=\"normal\"></span>"
+    },
+    "url_tip": {
+        "message": "网址: <span class=\"normal\"></span>"
     }
 }

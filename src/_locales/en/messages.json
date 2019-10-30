@@ -280,5 +280,23 @@
     }, 
     "disable_error_warnings_tip": {
         "message": " Disables communicating errors and warnings via JavaScript alert."
+    },
+    "insert_username_password": {
+        "message": "Fill User + Pass"
+    },
+    "insert_password": {
+        "message": "Fill Password"
+    },
+    "save_credentials": {
+        "message": "Save Credentials"
+    },
+    "show_password_generator_icons": {
+        "message": "Show Password Generator Icons"
+    },
+    "username_tip": {
+        "message": "Username: <span class=\"normal\"></span>"
+    },
+    "url_tip": {
+        "message": "URL: <span class=\"normal\"></span>"
     }
 }

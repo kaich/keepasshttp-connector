@@ -68,21 +68,21 @@
 	],
 	"commands": {
 		"fill-username-password": {
-			"description": "Insert username + password",
+			"description": "__MSG_insert_password",
 			"suggested_key": {
 				"default": "Alt+Shift+U",
 				"mac": "Alt+Shift+U"
 			}
 		},
 		"fill-password": {
-			"description": "Insert a password",
+			"description": "__MSG_insert_password",
 			"suggested_key": {
 				"default": "Alt+Shift+P",
 				"mac": "Alt+Shift+P"
 			}
 		},
 		"save-credential": {
-			"description": "Save the entry",
+			"description": "__MSG_save_entry",
 			"suggested_key": {
 				"default": "Alt+Shift+S",
 				"mac": "Alt+Shift+S"	

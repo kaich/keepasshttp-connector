@@ -89,7 +89,7 @@ if (utils.isFirefox) {
  * Add context menu entry for filling in username + password
  */
 browser.contextMenus.create({
-	"title": "Fill User + Pass",
+	"title": browser.i18n.getMessage("insert_username_password"),
 	"contexts": menuContexts,
 	"onclick": function(info, tab) {
 		browser.tabs.sendMessage(tab.id, {
@@ -102,7 +102,7 @@ browser.contextMenus.create({
  * Add context menu entry for filling in only password which matches for given username
  */
 browser.contextMenus.create({
-	"title": "Fill Pass Only",
+	"title": browser.i18n.getMessage("insert_password"),
 	"contexts": menuContexts,
 	"onclick": function(info, tab) {
 		browser.tabs.sendMessage(tab.id, {
@@ -115,7 +115,7 @@ browser.contextMenus.create({
  * Add context menu entry for creating icon for generate-password dialog
  */
 browser.contextMenus.create({
-	"title": "Show Password Generator Icons",
+	"title": browser.i18n.getMessage("show_password_generator_icons"),
 	"contexts": menuContexts,
 	"onclick": function(info, tab) {
 		browser.tabs.sendMessage(tab.id, {
@@ -128,7 +128,7 @@ browser.contextMenus.create({
  * Add context menu entry for creating icon for generate-password dialog
  */
 browser.contextMenus.create({
-	"title": "Save credentials",
+	"title":  browser.i18n.getMessage("save_credentials"),
 	"contexts": menuContexts,
 	"onclick": function(info, tab) {
 		browser.tabs.sendMessage(tab.id, {
