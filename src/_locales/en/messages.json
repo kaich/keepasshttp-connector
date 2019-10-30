@@ -258,7 +258,7 @@
         "message": "KeePassHttp Version:"
     },
     "app_inc": {
-        "message": "2019 - kai"
+        "message": "FantasyPass@inc 2019 - kai"
     },
     "unable_connect_keepasshttp": {
         "message": "Unable to connect to KeePassHttp"
@@ -276,9 +276,9 @@
         "message": " also fill in the next password-field"
     },
     "supress_warnings_errors": {
-        "message": " 禁止弹窗来显示错误和警告。"
+        "message": " also fill in the next password-field"
     }, 
     "disable_error_warnings_tip": {
-        "message": " 禁用通过JavaScript弹窗传递错误和警告。"
+        "message": " Disables communicating errors and warnings via JavaScript alert."
     }
 }
