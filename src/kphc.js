@@ -7,6 +7,22 @@ var _called = {};
 // Count of detected form fields on the page
 var _detectedFields = 0;
 
+chrome.runtime.onMessage.addListener(function(req, sender, sendResponse) {
+	if ('action' in req) {
+		if (req.action == "fill_user_pass") {
+			cip.receiveCredentialsIfNecessary();
+			cip.fillInFromActiveElement(false);
+		}
+		else if (req.action == "fill_pass_only") {
+			cip.receiveCredentialsIfNecessary();
+			cip.fillInFromActiveElementPassOnly(false);
+		}
+		else if(req.action == "remember_credentials") {
+			cip.contextMenuRememberCredentials();
+		}	
+	}
+})
+
 browser.runtime.onMessage.addListener(function(req, sender, callback) {
 	if ('action' in req) {
 		if(req.action == "fill_user_pass_with_specific_login") {

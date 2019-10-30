@@ -9,11 +9,6 @@
 		"48": "icons/keepass_48x48.png",
 		"128": "icons/keepass_128x128.png"
 	},
-	"applications": {
-		"gecko": {
-			"id": "FantasyKee@addons.brandt.tech"
-		}
-	},
 	"browser_action": {
 		"default_icon": {
 			"19": "icons/19x19/icon_normal_blue_19x19.png",
@@ -68,21 +63,21 @@
 	],
 	"commands": {
 		"fill-username-password": {
-			"description": "__MSG_insert_password",
+			"description": "Insert username + password",
 			"suggested_key": {
 				"default": "Alt+Shift+U",
 				"mac": "Alt+Shift+U"
 			}
 		},
 		"fill-password": {
-			"description": "__MSG_insert_password",
+			"description": "Insert a password",
 			"suggested_key": {
 				"default": "Alt+Shift+P",
 				"mac": "Alt+Shift+P"
 			}
 		},
 		"save-credential": {
-			"description": "__MSG_save_entry",
+			"description": "Save the credentials entry",
 			"suggested_key": {
 				"default": "Alt+Shift+S",
 				"mac": "Alt+Shift+S"	

@@ -141,27 +141,26 @@ browser.contextMenus.create({
  * Listen for keyboard shortcuts specified by user
  */
 browser.commands.onCommand.addListener(function(command) {
-
 	if(command === "fill-username-password") {
-		browser.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+		browser.tabs.query({ active: true, currentWindow: true }).then(function(tabs) {
 			if (tabs.length) {
-				browser.tabs.sendMessage(tabs[0].id, { action: "fill_user_pass" });
+				chrome.tabs.sendMessage(tabs[0].id, { action: "fill_user_pass" });
 			}
 		});
 	}
 
 	if(command === "fill-password") {
-		browser.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+		browser.tabs.query({ active: true, currentWindow: true }).then(function(tabs) {
 			if (tabs.length) {
-				browser.tabs.sendMessage(tabs[0].id, { action: "fill_pass_only" });
+				chrome.tabs.sendMessage(tabs[0].id, { action: "fill_pass_only" });
 			}
 		});
 	}
 
 	if(command === "save-credential") {
-		browser.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+		browser.tabs.query({ active: true, currentWindow: true }).then(function(tabs) {
 			if (tabs.length) {
-				browser.tabs.sendMessage(tabs[0].id, { action: "remember_credentials" });
+				chrome.tabs.sendMessage(tabs[0].id, { action: "remember_credentials" });
 			}
 		});
 	}
