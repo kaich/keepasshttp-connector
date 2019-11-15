@@ -1418,6 +1418,9 @@ cip.fillInFromActiveElementPassOnly = function(suppressWarnings, isOtp = false) 
 	if(el.type && el.type.toLowerCase() == "password") {
 		combination = cipFields.getCombination("password", fieldId);
 	}
+	else if((el.type && el.type.toLowerCase() == "otp") || (el.id && el.id.toLowerCase() == 'otp')) {
+		combination = cipFields.getCombination("password", fieldId);
+	}
 	else {
 		combination = cipFields.getCombination("username", fieldId);
 	}
