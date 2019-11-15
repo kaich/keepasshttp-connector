@@ -76,6 +76,13 @@
 				"mac": "Alt+Shift+P"
 			}
 		},
+		"fill-otp-password": {
+			"description": "Insert a otp password",
+			"suggested_key": {
+				"default": "Alt+Shift+T",
+				"mac": "Alt+Shift+T"
+			}
+		},
 		"save-credential": {
 			"description": "Save the credentials entry",
 			"suggested_key": {

@@ -287,6 +287,9 @@
     "insert_password": {
         "message": "Fill Password"
     },
+    "insert_otp_password": {
+        "message": "Fill OTP Password"
+    },
     "save_credentials": {
         "message": "Save Credentials"
     },

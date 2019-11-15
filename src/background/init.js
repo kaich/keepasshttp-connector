@@ -111,6 +111,19 @@ browser.contextMenus.create({
 	}
 });
 
+/** 
+ * Add context menu entry for filling in otp password which matches for given username
+ */
+browser.contextMenus.create({
+	"title": browser.i18n.getMessage("insert_otp_password"),
+	"contexts": menuContexts,
+	"onclick": function(info, tab) {
+		browser.tabs.sendMessage(tab.id, {
+			action: "fill_otp_pass"
+		});
+	}
+});
+
 /**
  * Add context menu entry for creating icon for generate-password dialog
  */
@@ -156,6 +169,15 @@ browser.commands.onCommand.addListener(function(command) {
 			}
 		});
 	}
+
+	if(command === "fill-otp-password") {
+		browser.tabs.query({ active: true, currentWindow: true }).then(function(tabs) {
+			if (tabs.length) {
+				chrome.tabs.sendMessage(tabs[0].id, { action: "fill_otp_pass" });
+			}
+		});
+	}
+
 
 	if(command === "save-credential") {
 		browser.tabs.query({ active: true, currentWindow: true }).then(function(tabs) {

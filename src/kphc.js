@@ -7,22 +7,6 @@ var _called = {};
 // Count of detected form fields on the page
 var _detectedFields = 0;
 
-chrome.runtime.onMessage.addListener(function(req, sender, sendResponse) {
-	if ('action' in req) {
-		if (req.action == "fill_user_pass") {
-			cip.receiveCredentialsIfNecessary();
-			cip.fillInFromActiveElement(false);
-		}
-		else if (req.action == "fill_pass_only") {
-			cip.receiveCredentialsIfNecessary();
-			cip.fillInFromActiveElementPassOnly(false);
-		}
-		else if(req.action == "remember_credentials") {
-			cip.contextMenuRememberCredentials();
-		}	
-	}
-})
-
 browser.runtime.onMessage.addListener(function(req, sender, callback) {
 	if ('action' in req) {
 		if(req.action == "fill_user_pass_with_specific_login") {
@@ -53,6 +37,10 @@ browser.runtime.onMessage.addListener(function(req, sender, callback) {
 		else if (req.action == "fill_pass_only") {
 			cip.receiveCredentialsIfNecessary();
 			cip.fillInFromActiveElementPassOnly(false);
+		}
+		else if (req.action == "fill_otp_pass") {
+			cip.receiveCredentialsIfNecessary();
+			cip.fillInFromActiveElementPassOnly(false, true);
 		}
 		else if (req.action == "activate_password_generator") {
 			cip.initPasswordGenerator(cipFields.getAllFields());
@@ -1350,7 +1338,7 @@ cip.getFormActionUrl = function(combination) {
 	return action;
 }
 
-cip.fillInCredentials = function(combination, onlyPassword, suppressWarnings) {
+cip.fillInCredentials = function(combination, onlyPassword, suppressWarnings, isOtp = false) {
 	var action = cip.getFormActionUrl(combination);
 
 	var u = _f(combination.username);
@@ -1376,7 +1364,7 @@ cip.fillInCredentials = function(combination, onlyPassword, suppressWarnings) {
 	}
 
 	if(cip.url == document.location.origin && cip.submitUrl == action && cip.credentials.length > 0) {
-		cip.fillIn(combination, onlyPassword, suppressWarnings);
+		cip.fillIn(combination, onlyPassword, suppressWarnings, isOtp);
 	}
 	else {
 		cip.url = document.location.origin;
@@ -1387,7 +1375,7 @@ cip.fillInCredentials = function(combination, onlyPassword, suppressWarnings) {
 			'args': [ cip.url, cip.submitUrl, false, true ]
 		}).then(function(credentials) {
 			cip.retrieveCredentialsCallback(credentials, true);
-			cip.fillIn(combination, onlyPassword, suppressWarnings);
+			cip.fillIn(combination, onlyPassword, suppressWarnings, isOtp);
 		});
 	}
 }
@@ -1415,7 +1403,7 @@ cip.fillInFromActiveElement = function(suppressWarnings) {
 	cip.fillInCredentials(combination, false, suppressWarnings);
 }
 
-cip.fillInFromActiveElementPassOnly = function(suppressWarnings) {
+cip.fillInFromActiveElementPassOnly = function(suppressWarnings, isOtp = false) {
 	var el = document.activeElement;
 	if (el.tagName.toLowerCase() != "input") {
 		if(cipFields.combinations.length > 0) {
@@ -1445,7 +1433,7 @@ cip.fillInFromActiveElementPassOnly = function(suppressWarnings) {
 
 	delete combination.loginId;
 
-	cip.fillInCredentials(combination, true, suppressWarnings);
+	cip.fillInCredentials(combination, true, suppressWarnings, isOtp);
 }
 
 cip.setValue = function(field, value) {
@@ -1500,7 +1488,7 @@ cip.setValueWithChange = function(field, value) {
 	field[0].dispatchEvent(new Event('change', {'bubbles': true}));
 }
 
-cip.fillIn = function(combination, onlyPassword, suppressWarnings) {
+cip.fillIn = function(combination, onlyPassword, suppressWarnings, isOtp = false) {
 	// no credentials available
 	if (cip.credentials.length == 0 && !suppressWarnings) {
 		var message = "No logins found.";
@@ -1523,7 +1511,8 @@ cip.fillIn = function(combination, onlyPassword, suppressWarnings) {
 		}
 		if(pField) {
 			pField.attr("type", "password");
-			cip.setValueWithChange(pField, cip.credentials[0].Password);
+			let psw = isOtp ? cip.getOtp(cip.credentials[0]) : cip.credentials[0].Password
+			cip.setValueWithChange(pField, psw);
 			pField.data("unchanged", true);
 			filledIn = true;
 		}
@@ -1744,6 +1733,16 @@ cip.rememberCredentials = function(usernameValue, passwordValue) {
 
 	return false;
 };
+
+cip.getOtp = function(credential) {
+	let fields = credential.StringFields
+	for(var field of fields) {
+		if(field.Key == "TOTP") {
+			return field.Value
+		}
+	}
+	return null
+}
 
 cIPJQ(function() {
 	cip.init();

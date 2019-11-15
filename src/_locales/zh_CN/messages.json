@@ -287,6 +287,9 @@
     "insert_password": {
         "message": "插入密码"
     },
+    "insert_otp_password": {
+        "message": "插入一次性密码"
+    },
     "save_credentials": {
         "message": "保存登录凭证"
     },
