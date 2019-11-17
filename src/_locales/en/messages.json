@@ -6,25 +6,25 @@
         "message": "Choose own credential fields for this page"
     },
     "register_pair_tip": {
-        "message": "KeePassHttp-Connector has not been configured. Press the connect button to register and pair with KeePassHttp."
+        "message": "FantasyKee has not been configured. Press the connect button to register and pair with KeePassHttp."
     },
     "connect": {
         "message": "Connect"
     },
     "disconnected_tip": {
-        "message": "KeePassHttp-Connector has been disconnected from KeePassHttp."
+        "message": "FantasyKee has been disconnected from KeePassHttp."
     },
     "press_reconnect_tip": {
         "message": "Press the reconnect button to establish a new connection."
     },
     "connect_success_tip": {
-        "message": "KeePassHttp-Connector has been configured using the identifier \"<em id=\"associated-identifier\"></em>\" and is successfully connected to KeePassHttp"
+        "message": "FantasyKee has been configured using the identifier \"<em id=\"associated-identifier\"></em>\" and is successfully connected to KeePassHttp"
     },
     "redected_credential_tip": {
         "message": "Redetect credential fields"
     },
     "encountered_error_tip": {
-        "message": "KeePassHttp-Connector has encountered an error:"
+        "message": "FantasyKee has encountered an error:"
     },
     "reload": {
         "message": "Reload"
@@ -39,7 +39,7 @@
         "message": "Select the login information you would like to get entered into the page:"
     },
     "more_password_right_click_tip": {
-        "message": "KeePassHttp-Connector found more than one password field on this page. To enter your logins, right-click on one of the password fields, and choose either the \"<code>Fill User + Pass</code>\" or \"<code>Fill Pass Only</code>\" command."
+        "message": "FantasyKee found more than one password field on this page. To enter your logins, right-click on one of the password fields, and choose either the \"<code>Fill User + Pass</code>\" or \"<code>Fill Pass Only</code>\" command."
     },
     "entry_changed_save_tip": {
         "message": "Username or password changed! Save it?"
@@ -108,13 +108,13 @@
         "message": "Automatically retrieve credentials."
     },
     "retrieve_credentials_when_tab_active_tip": {
-        "message": "KeePassHttp-Connector will immediately retrieve the credentials when the tab is activated."
+        "message": "FantasyKee will immediately retrieve the credentials when the tab is activated."
     },
     "auto_fill_single_credential_entry": {
         "message": "Automatically fill-in single credentials entry."
     },
     "auto_fill_single_credential_entry_intro_tip": {
-        "message": "If KeePassHttp-Connector does only receive a single entry from KeePassHttp it automatically fills this credentials into the found credential fields."
+        "message": "If FantasyKee does only receive a single entry from KeePassHttp it automatically fills this credentials into the found credential fields."
     },
     "active_autocomplete_username": {
         "message": "Activate autocomplete for username fields."
@@ -138,7 +138,7 @@
         "message": "never"
     },
     "keepasshttpdd_needs_tip": {
-        "message": "KeePassHttp-Connector needs the plugin KeePassHttp to retrieve credentials from and send them to KeePass."
+        "message": "FantasyKee needs the plugin KeePassHttp to retrieve credentials from and send them to KeePass."
     },
     "download_lastest_keepasshttp_tip": {
         "message": "You can download the latest stable version from here: "
@@ -156,7 +156,7 @@
         "message": "Auto fill HTTP Auth dialogs and send them."
     },
     "autofill_http_auth_and_send_intro": {
-        "message": "If credentials are found for a page and the login-type is an HTTP Auth request, KeePassHttp-Connector tries to login with the first given credentials. <br /> An HTTP Auth dialog looks like this:"
+        "message": "If credentials are found for a page and the login-type is an HTTP Auth request, FantasyKee tries to login with the first given credentials. <br /> An HTTP Auth dialog looks like this:"
     },
     "change_only_if_know": {
         "message": "<strong>Attention!</strong> Please change the following settings only if you know what you are doing!"
@@ -165,7 +165,7 @@
         "message": "Show these settings anyway"
     },
     "dangerous_settings_intro": {
-        "message": "KeePassHttp-Connector communicates on <em>http://[hostname]:[port]</em> with KeePassHTTP. <br /> If you want to run KeePass on a remote computer, you have to change the hostname. <br /> Sometimes the default port is still in use and you have to change the port number in KeePassHTTP to get it running. So you have to set the same port number in KeePassHttp-Connector and KeePassHTTP."
+        "message": "FantasyKee communicates on <em>http://[hostname]:[port]</em> with KeePassHTTP. <br /> If you want to run KeePass on a remote computer, you have to change the hostname. <br /> Sometimes the default port is still in use and you have to change the port number in KeePassHTTP to get it running. So you have to set the same port number in FantasyKee and KeePassHTTP."
     },
     "host_name": {
         "message": "Hostname:"
@@ -225,7 +225,7 @@
         "message": "Specified credential fields"
     },
     "specified_credential_fields_intro": {
-        "message": "If KeePassHttp-Connector detects the wrong credential fields, you are able to specify the correct fields by yourself. <br /> Just go to the page and click on the KeePassHttp-Connector-Icon, now select <em>Choose own credential fields for this page</em>. <br /> On this page you can manage theses specified credential fields."
+        "message": "If FantasyKee detects the wrong credential fields, you are able to specify the correct fields by yourself. <br /> Just go to the page and click on the FantasyKee-Icon, now select <em>Choose own credential fields for this page</em>. <br /> On this page you can manage theses specified credential fields."
     },
     "page_url": {
         "message": "Page URL"
@@ -240,7 +240,7 @@
         "message": "Do you really want to remove the specified credential fields on the page <strong></strong>?"
     },
     "is_really_remove_specified_credential_field_tip": {
-        "message": "KeePassHttp-Connector will automatically detect the credential fields the next time you visit this page."
+        "message": "FantasyKee will automatically detect the credential fields the next time you visit this page."
     },
     "developer_intro": {
         "message": "Developed by <a target=\"_blank\" href=\"https://github.com/kaich\">kai</a>."
@@ -252,7 +252,7 @@
         "message": "Visit project's page in GitHub"
     },
     "extension_version": {
-        "message": "KeePassHttp-Connector Version:"
+        "message": "FantasyKee Version:"
     },
     "keepasshttp_version": {
         "message": "KeePassHttp Version:"
