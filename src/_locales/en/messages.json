@@ -225,7 +225,7 @@
         "message": "Specified credential fields"
     },
     "specified_credential_fields_intro": {
-        "message": "If FantasyKeep detects the wrong credential fields, you are able to specify the correct fields by yourself. <br /> Just go to the page and click on the FantasyKee-Icon, now select <em>Choose own credential fields for this page</em>. <br /> On this page you can manage theses specified credential fields."
+        "message": "If FantasyKeep detects the wrong credential fields, you are able to specify the correct fields by yourself. <br /> Just go to the page and click on the FantasyKeep-Icon, now select <em>Choose own credential fields for this page</em>. <br /> On this page you can manage theses specified credential fields."
     },
     "page_url": {
         "message": "Page URL"

@@ -108,7 +108,7 @@
         "message": "自动检索凭证."
     },
     "retrieve_credentials_when_tab_active_tip": {
-        "message": "激活选项卡后，FantasyKee将立即检索凭据."
+        "message": "激活选项卡后，FantasyKeep将立即检索凭据."
     },
     "auto_fill_single_credential_entry": {
         "message": "自动填写单个凭证条目."
@@ -156,7 +156,7 @@
         "message": "自动填充HTTP验证对话框并发送它们."
     },
     "autofill_http_auth_and_send_intro": {
-        "message": "如果找到页面的凭据，并且登录类型是HTTP验证请求，则FantasyKee尝试使用第一个给定的凭据登录。<br/> 一个HTTP认证对话框是这样的:"
+        "message": "如果找到页面的凭据，并且登录类型是HTTP验证请求，则FantasyKeep尝试使用第一个给定的凭据登录。<br/> 一个HTTP认证对话框是这样的:"
     },
     "change_only_if_know": {
         "message": "<strong>注意!</strong> 只有在您知道您在做什么的情况下，更改以下设置!"

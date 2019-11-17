@@ -1135,7 +1135,7 @@ cipFields.useDefinedCredentialFields = function() {
 
 var cip = {};
 
-// settings of FantasyKee
+// settings of FantasyKeep
 cip.settings = {};
 // username field which will be set on focus
 cip.u = null;
