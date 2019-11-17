@@ -1612,7 +1612,7 @@ cip.fillIn = function(combination, onlyPassword, suppressWarnings, isOtp = false
 			if(countPasswords > 1) {
 				if(!suppressWarnings) {
 					var message = "Error #105\nMore than one login was found in KeePass!\n" +
-					"Press the FantasyKee icon for more options.";
+					"Press the FantasyKeep icon for more options.";
 					browser.runtime.sendMessage({
 						action: 'alert',
 						args: [message]
@@ -1632,7 +1632,7 @@ cip.fillIn = function(combination, onlyPassword, suppressWarnings, isOtp = false
 		else {
 			if(!suppressWarnings) {
 					var message = "Error #104\nMore than one login was found in KeePass!\n" +
-					"Press the FantasyKee icon for more options.";
+					"Press the FantasyKeep icon for more options.";
 				browser.runtime.sendMessage({
 					action: 'alert',
 					args: [message]
