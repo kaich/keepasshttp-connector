@@ -261,7 +261,7 @@
         "message": "FantasyPass@inc 2019 - kai"
     },
     "unable_connect_keepasshttp": {
-        "message": "无法连接到 KeePassHttp"
+        "message": "无法连接到 KeePassHttp。如果是远程填充，请查看是否设置了全局代理，造成非局域网环境。"
     },
     "fill_in_copy": {
         "message": "填充 & 复制到剪切板"

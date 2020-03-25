@@ -261,7 +261,7 @@
         "message": "FantasyPass@inc 2019 - kai"
     },
     "unable_connect_keepasshttp": {
-        "message": "Unable to connect to KeePassHttp"
+        "message": "Unable to connect to KeePassHttp. If remote Autofill, could not connect because global proxy is set."
     },
     "fill_in_copy": {
         "message": "Fill in & copy to clipboard"
