@@ -207,6 +207,7 @@ window.setInterval(function() {
 			browser.runtime.sendMessage({
 				action: 'load_settings'
 			})
+			configProxy(finalAddr)
 		}
 	}).catch(error => {
 		console.log(error)
@@ -222,4 +223,20 @@ function invokeActionMessage(message) {
 		var newURL = content 
 		chrome.tabs.create({ url: newURL });
 	}
+}
+
+function configProxy(bypass) {
+	var config = {
+        mode: "pac_script",
+        pacScript: {
+          data: "function FindProxyForURL(url, host) {\n" +
+                "  if (host == " + bypass + " )\n" +
+                "    return 'SYSTEM';\n" +
+                "  return 'DIRECT';\n" +
+                "}"
+        }
+      };
+      chrome.proxy.settings.set(
+          {value: config, scope: 'regular'},
+          function() {});
 }
